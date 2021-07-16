@@ -1,0 +1,10 @@
+Set Java version in fish
+
+# Show all installed Java versions
+/usr/libexec/java_home -V
+
+# Select major version (if unique, otherwise specify full name e.g. 1.8.0_131)
+set -x JAVA_HOME (/usr/libexec/java_home -v 1.8)
+
+# Verify
+java -version
