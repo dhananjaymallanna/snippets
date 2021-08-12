@@ -1,0 +1,1 @@
+pg_dump --table=export_messages --data-only --column-inserts -h database.url.company.in -d amex-iso -U postgres > insert_databaseName.sql
